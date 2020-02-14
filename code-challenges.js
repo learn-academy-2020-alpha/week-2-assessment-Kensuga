@@ -31,13 +31,13 @@ var randomNouns = ["streetlamp", "potato", "teeth", "conclusion", "nephew", "tem
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew", "Temperature", "Database"]
 
 const capitalize = arg => {
-    let newArray = arg.map(word => { 
-        upper = word.replace(/^\w/, c => c.toUpperCase()); 
-        return upper;})
+    let newArray = arg.map(word =>
+        word.replace(/^\w/, c => c.toUpperCase()))   
     return newArray;
     }
 
 console.log(capitalize(randomNouns));
+
 
 // --------------------3) Create a function that takes in the mixedDataArray array and returns an array with ONLY NUMBERS sorted from least to greatest.
 
@@ -84,6 +84,7 @@ let calculator = (num1, oper, num2) => {
         }
     }
 }
+
 
 // Uncomment and use the following console logs to test your function
 console.log(calculator(3, "*", 9))

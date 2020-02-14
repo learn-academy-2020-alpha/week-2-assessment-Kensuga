@@ -43,6 +43,7 @@
         render(){
           return(
             <div>
+              <Header />
               <MoodMeter
                 moodOptions={ this.state.moods[this.state.currentMood] }
                 next={ this.nextMood }
